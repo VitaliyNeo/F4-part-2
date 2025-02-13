@@ -1,0 +1,83 @@
+header {
+    height: 60px;
+    background: rgba(200,150,20, 0.8);
+    box-shadow: 0 3px 5px 0 rgba(0, 100, 0, 0.250);
+    color: black;
+    font-family: "Nunito", Georgia, Serif;
+
+}
+
+header.h_content {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0 0 12px 0;
+    padding-top: 3px;
+}
+
+header.h_content .column {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+header.h_content .column.col_left {
+    flex-direction: column;
+}
+
+header .h_logo {
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+header .h_logo img {
+    padding-bottom: 2px;
+}
+
+header .h_buttons {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+header .h_buttons a {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+header .h_buttons a.button_right {
+    margin-left: 80px;
+}
+
+header .h_name {
+    margin-left: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+@media (width <= 500px) {
+    header {
+        height: 70px;
+    }
+
+    header.h_content {
+        flex-direction: column;
+    }
+
+    header.h_content .column.col_left {
+        margin-top: 6px;
+    }
+
+    header.h_content .column.col_right {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
